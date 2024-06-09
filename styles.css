@@ -28,13 +28,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s;
 }
 
 .project-card h2 {
   margin-top: 0%;
   color: #333;
   font-size: 1.5em;
-  min-height: 75px;
 }
 
 .project-card p {
@@ -43,22 +43,18 @@ main {
 
 .project-card a {
   background-color: #333;
-  border-radius: 4px;
+  border-radius: 20px;
   color: #fff;
   display: block;
   margin-top: 10px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.project-card a:hover {
+.project-card:hover {
   transform: scale(1.01);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
-
 
 #calculator {
   background-color: lightgray;
